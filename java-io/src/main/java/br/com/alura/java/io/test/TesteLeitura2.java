@@ -15,20 +15,20 @@ public class TesteLeitura2 {
 		
 		while(scan.hasNextLine()) {
 			String linha = scan.nextLine();
-			System.out.println(linha);	
+//			System.out.println(linha);	
 			
 			Scanner scanner = new Scanner(linha);
 			scanner.useLocale(Locale.US);
 			scanner.useDelimiter(",");
 			
-			String valor1 = scanner.next();
-			int valor2 = scanner.nextInt();
-			String valor3 = scanner.next();
-			String valor4 = scanner.next(); 
-			double valor5 = scanner.nextDouble();
+			String tipoConta = scanner.next();
+			int agencia = scanner.nextInt();
+			int numero = scanner.nextInt();
+			String titular = scanner.next(); 
+			double saldo = scanner.nextDouble();
 		
-			
-			System.out.println(valor1 + valor2 + valor3 + valor4 + valor5);
+			String valorFormatado = String.format("%s - %04d - %08d  %s: %05.2f", tipoConta, agencia, numero, titular, saldo);
+			System.out.println(valorFormatado);
 			
 			scanner.close();
 //			String[] valores = linha.split(",");

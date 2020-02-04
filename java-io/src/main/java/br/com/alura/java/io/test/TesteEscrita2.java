@@ -17,19 +17,17 @@ public class TesteEscrita2 {
 //		Writer osw = new OutputStreamWriter(fos);
 //		BufferedWriter bw = new BufferedWriter(osw);
 		
-		FileWriter fw = new FileWriter("lorem2.txt");
-		
-		fw.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ");
-		fw.write(System.lineSeparator());
-		fw.write(System.lineSeparator());
-		fw.write(System.lineSeparator());
-		fw.write(System.lineSeparator());
-//		fw.newLine();
-		fw.write("ipsum dolor sit amet");
+//		FileWriter fw = new FileWriter("lorem2.txt");
+		BufferedWriter bw = new BufferedWriter(new FileWriter("lorem2.txt"));
+		bw.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ");
+		bw.write(System.lineSeparator());
+		bw.newLine();
+		bw.newLine();
+		bw.write("ipsum dolor sit amet");
 		
 
 		
-		fw.close();
+		bw.close();
 	}
 
 }

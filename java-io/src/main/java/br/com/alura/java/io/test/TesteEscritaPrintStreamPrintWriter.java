@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
-public class TesteEscritaFileWriter {
+public class TesteEscritaPrintStreamPrintWriter{
 
 	public static void main(String[] args) throws IOException {
 		
@@ -21,7 +21,7 @@ public class TesteEscritaFileWriter {
 		
 		PrintWriter ps = new PrintWriter("lorem2.txt");
 		
-		ps.println("Tayyyyy");
+		ps.println("ayyyyy");
 		ps.println();
 		ps.println("ohohohoohohohohooh");
 		
